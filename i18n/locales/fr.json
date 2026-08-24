@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "name": "Florentin Duyck",
+    "title": "Développeur Frontend VueJS",
+    "subtitle": "Bienvenue, je suis"
+  },
+
+  "social": {
+    "github": "GitHub",
+    "malt": "Malt",
+    "linkedin": "LinkedIn",
+    "email": "florentin.duyck.pro{'@'}gmail.com"
+  },
+
+  "header": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+
+  "about": {
+    "title": "01 - À propos de moi",
+    "description": "Je suis un développeur frontend passionné par la création d'interfaces utilisateur intuitives et réactives. Avec une solide expérience en VueJS et NuxtJS, je m'efforce de transformer les idées en expériences numériques engageantes."
+  },
+
+    "skills": {
+        "title": "02 - Compétences",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "other": "Autre"
+    },
+
+    "projects": {
+        "title": "03 - Projets",
+        "projects": [
+            {
+                "name": "NestBudget",
+                "description": "Application de gestion de budget personnel avec suivi des dépenses et visualisation des finances.",
+                "link": "https://nestbudget.fr"
+            },
+            {
+                "name": "E-commerce",
+                "description": "Site e-commerce développé avec Spring et Express, utilisant MongoDB pour la gestion des données.",
+                "link": "https://ecommerce.example.com"
+            },
+            {
+                "name": "Blog",
+                "description": "Blog personnel développé avec WordPress, offrant une interface conviviale pour la publication d'articles.",
+                "link": "https://blog.example.com"
+            }
+        ]
+    },
+
+    "contact": {
+        "title": "04 - Contact",
+        "subtitle": "Discutons de votre projet",
+        "description": "Disponible pour des missions freelance ou des collaborations. N'hésitez pas à me contacter !"
+    }
+
+}

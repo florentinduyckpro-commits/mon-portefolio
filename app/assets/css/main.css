@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* stylelint-disable at-rule-no-unknown */
+@theme {
+
+    --font-heading: "Coda", system-ui;
+    --font-body: "Geist", sans-serif;
+
+
+    --color-principal-font: #ECD9FA;
+    --color-secondary-font: #D19DFF;
+    --color-principal-background: #1E1523;
+    --color-button-background: #8E4EC6;
+    --color-button-hover-background: #9A5CD0;
+    --color-separator: #54346B;
+    --color-component-background-normal: #301C3B;
+    --color-component-background-hover: #3D224E;
+    --color-component-background-active: #48295C;
+}
+/* stylelint-enable at-rule-no-unknown */
