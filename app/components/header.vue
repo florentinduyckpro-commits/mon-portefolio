@@ -21,6 +21,7 @@
                     <span class="font-body text-principal-font hover:text-secondary-font md:text-basic lg:text-basic">{{ t('header.contact') }}</span>
                 </NuxtLink>
             </li>
+            test
         </ul>
           <button @click="setLang('en')">EN</button>
         <button @click="setLang('fr')">FR</button>
