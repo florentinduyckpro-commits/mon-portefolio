@@ -52,6 +52,6 @@
 
 <script setup>
     import { Mail } from '@lucide/vue';
-    const { t, locale, locales } = useI18n()
+    const { t } = useI18n()
     const { target, isVisible } = useScrollReveal()
 </script>

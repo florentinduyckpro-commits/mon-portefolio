@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-    const { t, locale, locales } = useI18n()
+    const { t, locale } = useI18n()
     const switchLocalePath = useSwitchLocalePath()
     const router = useRouter()
 

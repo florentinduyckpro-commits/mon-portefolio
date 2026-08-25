@@ -1,4 +1,5 @@
-<template >
+<template>
+<main>
     <hr class="border-separator">
     <section class="flex p-30" id="about" ref="target"
     :class="[
@@ -37,7 +38,6 @@
         </div>
     </section>
     <hr class="border-separator">
-    <main>
     <section id="contact" class="flex flex-col p-30 items-center">
         <h2 class="font-heading text-secondary-font text-2xl md:text-xl lg:text-2xl">{{ t('contact.title') }}</h2>
         <h2 class="font-heading text-principal-font text-5xl md:text-4xl lg:text-5xl py-5">{{ t('contact.subtitle') }}</h2>
