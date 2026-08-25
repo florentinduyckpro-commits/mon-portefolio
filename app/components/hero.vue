@@ -1,6 +1,10 @@
 <template>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <section class="grid grid-cols-3 gap-4 items-center justify-center p-30">
+    <section class="grid grid-cols-3 gap-4 items-center justify-center p-30" ref="target"
+    :class="[
+      'transition-all duration-700 ease-out',
+      isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+    ]">
         <div class="col-span-2 ">
             <h1 class="font-body text-secondary-font " >{{ t('hero.subtitle') }}</h1>
             <h2 class="font-heading text-principal-font bg-clip-text text-4xl md:text-6xl lg:text-7xl">{{ t('hero.name') }}</h2>
@@ -49,4 +53,5 @@
 <script setup>
     import { Mail } from '@lucide/vue';
     const { t, locale, locales } = useI18n()
+    const { target, isVisible } = useScrollReveal()
 </script>

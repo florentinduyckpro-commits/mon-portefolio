@@ -21,10 +21,13 @@
                     <span class="font-body text-principal-font hover:text-secondary-font md:text-basic lg:text-basic">{{ t('header.contact') }}</span>
                 </NuxtLink>
             </li>
-            test
         </ul>
-          <button @click="setLang('en')">EN</button>
-        <button @click="setLang('fr')">FR</button>
+          <button
+            @click="toggleLocale"
+            class="inline-flex items-center gap-1 rounded-md border px-3 py-1.5 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+            {{ locale === 'fr' ? '🇫🇷 FR' : '🇬🇧 EN' }}
+        </button>
     </div>
 </template>
 
@@ -33,7 +36,9 @@
     const switchLocalePath = useSwitchLocalePath()
     const router = useRouter()
 
-    function setLang(code) {
-    router.push(switchLocalePath(code))
+    const nextLocale = computed(() => locale.value === 'fr' ? 'en' : 'fr')
+
+    function toggleLocale() {
+    router.push(switchLocalePath(nextLocale.value))
     }
 </script>
