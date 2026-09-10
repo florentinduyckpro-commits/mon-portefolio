@@ -71,7 +71,7 @@
 
 <script setup>
 import nestbudgetImage from '~/assets/images/nestbudget.png'
-import blogImage from '~/assets/images/blog.png'
+import blogImage from '~/assets/images/blog.PNG'
 import { Mail } from '@lucide/vue';
 const { t } = useI18n()
 const requestUrl = useRequestURL()
