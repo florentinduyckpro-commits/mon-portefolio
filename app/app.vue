@@ -7,7 +7,7 @@
       <div class="grid-retro"></div>
       <div class="stars"></div>
       <div class="hero-fade"></div> 
-      <div class="hero-content p-50">
+      <div class="hero-content p-5 pt-24 sm:p-8 sm:pt-24 md:p-10 md:pt-28 lg:p-20 lg:pt-32">
         <Hero />
       </div>
     </section>
@@ -18,6 +18,33 @@
     </main>
   </div>
 </template>
+
+<script setup>
+  const config = useAppConfig()
+  const { locale } = useI18n()
+  const requestUrl = useRequestURL()
+
+  useHead({
+    htmlAttrs: {
+      lang: () => locale.value,
+    },
+    link: [
+      {
+        rel: 'canonical',
+        href: () => requestUrl.href,
+      },
+    ],
+  })
+
+  useSeoMeta({
+    title: config.title,
+    ogTitle: config.title,
+    ogType: 'website',
+    ogUrl: () => requestUrl.href,
+    twitterCard: 'summary',
+    robots: 'index, follow',
+  })
+</script>
 
 <style scoped>
 .page {

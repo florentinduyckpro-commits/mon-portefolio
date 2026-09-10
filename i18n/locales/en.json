@@ -5,6 +5,11 @@
     "subtitle": "Welcome, I am"
   },
 
+  "seo": {
+    "title": "Florentin Duyck | Vue.js and Nuxt Frontend Developer",
+    "description": "Portfolio of Florentin Duyck, a freelance frontend developer specializing in Vue.js, Nuxt, TypeScript, and high-performance web interfaces."
+  },
+
   "social": {
     "github": "GitHub",
     "malt": "Malt",
@@ -21,7 +26,7 @@
 
   "about": {
     "title": "01 - About Me",
-    "description": "I am a passionate frontend developer focused on creating intuitive and responsive user interfaces. With a solid experience in VueJS and NuxtJS, I strive to transform ideas into engaging digital experiences."
+    "description": "I am Florentin Duyck, a frontend developer specialized in building modern, accessible, and high-performance web interfaces. I mainly use Vue.js, Nuxt, TypeScript, and Tailwind CSS to turn business needs into simple and effective experiences. My approach combines attention to interface details, code quality, and collaboration to build reliable products from the first screen to production."
   },
 
     "skills": {
@@ -40,9 +45,9 @@
                 "link": "https://nestbudget.fr"
             },
             {
-                "name": "E-commerce",
-                "description": "E-commerce site developed with Spring and Express, using MongoDB for data management.",
-                "link": "https://ecommerce.example.com"
+              "name": "Blog",
+              "description": "Personal blog about web development, built with Nuxt and Vue.js to share articles, projects, and development insights.",
+              "link": "https://blog-florentin-duyck.vercel.app"
             },
             {
                 "name": "Blog",

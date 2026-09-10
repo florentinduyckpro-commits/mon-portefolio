@@ -1,6 +1,6 @@
 <template>
     <NuxtLink :to="`${projectLink}`" target="_blank" rel="noopener noreferrer" class="block" >
-    <div class="bg-card-background border rounded-sm border-separator text-principal-font hover:bg-card-hover-background hover:text-secondary-font">
+    <div class="bg-card-background border rounded-sm border-separator text-principal-font hover:bg-card-hover-background hover:text-secondary-font hover:-translate-y-2 transition-all duration-300 ease-out">
         <img :src="projectImage" :alt="projectName" class="w-full h-50 object-cover object-[50%_0%] rounded-t-lg">
         <div class="bg-principal-background hover:bg-component-background-hover active:bg-component-background-active p-4 rounded-b-lg">
             <h3 class="font-heading text-lg md:text-xl lg:text-2xl p-2">{{ projectName }}</h3>
