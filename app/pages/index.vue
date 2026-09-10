@@ -2,7 +2,7 @@
 <main>
     <hr class="border-separator">
     <scroll-reveal direction="right">
-        <section class="flex flex-col gap-5 p-5 sm:p-8 md:flex-row md:gap-0 md:p-16 lg:p-30" id="about">
+        <section id="about" class="flex flex-col gap-5 p-5 sm:p-8 md:flex-row md:gap-0 md:p-16 lg:p-30">
             <h2 class="basis-1/3 font-heading text-2xl text-secondary-font sm:text-3xl md:px-6 md:text-xl lg:px-10 lg:text-2xl">{{ t('about.title') }}</h2>
             <p class="basis-2/3 font-body text-lg text-principal-font sm:text-xl md:px-6 lg:px-10">
                 {{ t('about.description') }}
@@ -11,28 +11,31 @@
     </scroll-reveal>
 
     <scroll-reveal direction="left">
-        <section class="flex flex-col p-5 sm:p-8 md:p-16 lg:p-30" id="skills" ref="target">
+        <section id="skills" ref="target" class="flex flex-col p-5 sm:p-8 md:p-16 lg:p-30">
             <h2 class="py-6 font-heading text-2xl text-secondary-font sm:text-3xl md:px-6 md:py-8 md:text-xl lg:px-10 lg:text-2xl">{{ t('skills.title') }}</h2>
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-4">
                 <card-skills class="w-full" :skill-name="t('skills.frontend')" :skills="['VueJS', 'NuxtJS', 'TailwindCSS', 'TypeScript']" />
-                <card-skills class="w-full" :skill-name="t('skills.backend') " :skills="['Java', 'Spring', 'MongoDB', 'PostgreSQL']" />
+                <card-skills class="w-full" :skill-name="t('skills.backend')" :skills="['Java', 'Spring', 'MongoDB', 'PostgreSQL']" />
                 <card-skills class="w-full sm:col-span-2 md:col-span-1" :skill-name="t('skills.other')" :skills="['Vercel', 'Sentry', 'Github']" />
             </div>
         </section>
     </scroll-reveal>
 
     <scroll-reveal direction="right">
-        <section class="flex flex-col p-5 sm:p-8 md:p-16 lg:p-30" id="project" ref="target"
-        :class="[
-          'transition-all duration-100 ease-out',
-          isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
-        ]">
+        <section
+            id="project"
+            ref="target"
+            class="flex flex-col p-5 sm:p-8 md:p-16 lg:p-30"
+            :class="[
+              'transition-all duration-100 ease-out',
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+            ]"
+        >
             <h2 class="py-6 font-heading text-2xl text-secondary-font sm:text-3xl md:px-6 md:py-8 md:text-xl lg:px-10 lg:text-2xl">{{ t('projects.title') }}</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:px-6 lg:px-10">
                 <card-project :project-name="t('projects.projects.0.name')" :project-description="t('projects.projects.0.description')" :project-image="nestbudgetImage" :techs="['React', 'NextJS', 'TailwindCSS']" :project-link="nestbudgetLink"/>
                 <card-project :project-name="t('projects.projects.1.name')" :project-description="t('projects.projects.1.description')" :project-image="blogImage" :techs="['NuxtJS', 'VueJS', 'TailwindCSS']" :project-link="blogLink" />
-            <!--       <card-project :project-name="t('projects.projects.2.name')" :project-description="t('projects.projects.2.description')" :project-image="nestbudgetImage" :techs="['WordPress', 'PHP', 'MySQL']" :project-link="nestbudgetLink" />
-            -->      </div>
+            </div>
         </section>
     </scroll-reveal>
 
@@ -43,9 +46,9 @@
             <h2 class="font-heading text-2xl text-secondary-font sm:text-3xl md:text-xl lg:text-2xl">{{ t('contact.title') }}</h2>
             <h2 class="py-5 font-heading text-3xl text-principal-font sm:text-4xl md:text-5xl">{{ t('contact.subtitle') }}</h2>
             <p class="max-w-2xl py-5 font-body text-lg text-principal-font sm:text-xl">{{ t('contact.description') }} </p>
-            <NuxtLink to="mailto:florentin.duyck.pro@gmail.com" class="my-5 inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-md bg-button-background p-2 text-principal-font transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-button-hover-background hover:text-secondary-font sm:w-auto">
+            <NuxtLink :to="`mailto:${emailAddress}`" class="my-5 inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-md bg-button-background p-2 text-principal-font transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-button-hover-background hover:text-secondary-font sm:w-auto">
                 <Mail class="text-s" />
-                <span class="font-body text-lg md:text-md lg:text-md">{{ t('social.email') }}</span>
+                <span class="font-body text-lg md:text-md lg:text-md">{{ emailLabel }}</span>
             </NuxtLink>
             <div class="flex flex-col items-center gap-3 py-5 sm:flex-row sm:flex-wrap sm:justify-center">
                 <NuxtLink to="https://www.linkedin.com/in/florentin-duyck/" target="_blank" rel="noopener noreferrer" class="p-2 text-principal-font hover:text-secondary-font">
@@ -77,6 +80,8 @@ const { t } = useI18n()
 const requestUrl = useRequestURL()
 const nestbudgetLink = 'https://nestbudget.fr'
 const blogLink = 'https://blog-florentin-duyck.vercel.app'
+const emailAddress = 'florentin.duyck.pro@gmail.com'
+const emailLabel = 'florentin.duyck.pro@gmail.com'
 const { target, isVisible } = useScrollReveal()
 
 useSeoMeta({

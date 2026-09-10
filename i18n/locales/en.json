@@ -2,7 +2,7 @@
   "hero": {
     "name": "Florentin Duyck",
     "title": "Frontend Developer VueJS",
-    "subtitle": "Welcome, I am"
+    "subtitle": "Freelance Frontend Developer · Vue.js · Nuxt · TypeScript"
   },
 
   "seo": {
@@ -14,7 +14,7 @@
     "github": "GitHub",
     "malt": "Malt",
     "linkedin": "LinkedIn",
-    "email": "florentin.duyck.pro{'@'}gmail.com"
+    "email": "Email"
   },
 
   "header": {
@@ -25,41 +25,41 @@
   },
 
   "about": {
-    "title": "01 - About Me",
-    "description": "I am Florentin Duyck, a frontend developer specialized in building modern, accessible, and high-performance web interfaces. I mainly use Vue.js, Nuxt, TypeScript, and Tailwind CSS to turn business needs into simple and effective experiences. My approach combines attention to interface details, code quality, and collaboration to build reliable products from the first screen to production."
+    "title": "01 - About me",
+    "description": "I have 5 years of experience in web application development, including more than 4 years on projects for companies such as Leroy Merlin, Camaïeu, and the Imprimerie Nationale. Specialised in Vue.js, Nuxt, and TypeScript, I work on new feature development, business applications, and the modernization of existing front-end systems. My personal experience with NestBudget also led me to take ownership of a SaaS product from concept through to production release."
   },
 
-    "skills": {
-        "title": "02 - Skills",
-        "frontend": "Frontend",
-        "backend": "Backend",
-        "other": "Other"
-    },
+  "skills": {
+    "title": "02 - Skills",
+    "frontend": "Core expertise",
+    "backend": "Full-stack experience",
+    "other": "Tools & production"
+  },
 
-    "projects": {
-        "title": "03 - Projects",
-        "projects": [
-            {
-                "name": "NestBudget",
-                "description": "Personal budget management application with expense tracking and financial visualization.",
-                "link": "https://nestbudget.fr"
-            },
-            {
-              "name": "Blog",
-              "description": "Personal blog about web development, built with Nuxt and Vue.js to share articles, projects, and development insights.",
-              "link": "https://blog-florentin-duyck.vercel.app"
-            },
-            {
-                "name": "Blog",
-                "description": "Personal blog developed with WordPress, offering a user-friendly interface for publishing articles.",
-                "link": "https://blog.example.com"
-            }
-        ]
-    },
+  "projects": {
+    "title": "03 - Projects",
+    "projects": [
+      {
+        "name": "NestBudget",
+        "description": "Budget management SaaS designed and developed from idea to production deployment.",
+        "link": "https://nestbudget.fr"
+      },
+      {
+        "name": "Technical blog",
+        "description": "Blog focused on web development and my hands-on experience, built with Nuxt 4 and Vue 3.",
+        "link": "https://blog-florentin-duyck.vercel.app"
+      },
+      {
+        "name": "WordPress Blog",
+        "description": "Personal blog developed with WordPress, offering a user-friendly publishing interface.",
+        "link": "https://blog.example.com"
+      }
+    ]
+  },
 
-    "contact": {
-        "title": "04 - Contact",
-        "subtitle": "Let's discuss your project",
-        "description": "Available for freelance missions or collaborations. Feel free to reach out!"
-    }
+  "contact": {
+    "title": "04 - Contact",
+    "subtitle": "Let’s discuss your project",
+    "description": "Available for freelance missions and collaborations. Feel free to get in touch!"
+  }
 }

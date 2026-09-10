@@ -39,10 +39,10 @@
                 </NuxtLink>
             </li>
             <li>
-                <NuxtLink to="mailto:florentin.duyck.pro@gmail.com" target="_blank" rel="noopener noreferrer">
+                <NuxtLink :to="`mailto:${emailAddress}`" target="_blank" rel="noopener noreferrer">
                     <button type="button" class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-button-background p-2 text-principal-font transition-all duration-300 ease-out hover:-translate-y-2 hover:bg-button-hover-background hover:text-secondary-font sm:w-auto">
                         <mail class="text-s" />
-                        <span class="font-body text-lg md:text-md lg:text-md">{{ t('social.email') }}</span>
+                        <span class="font-body text-lg md:text-md lg:text-md">{{ emailLabel }}</span>
                     </button>
                 </NuxtLink>
             </li>
@@ -54,4 +54,6 @@
     import { Mail } from '@lucide/vue';
     const { t } = useI18n()
     const { target, isVisible } = useScrollReveal()
+    const emailAddress = 'florentin.duyck.pro@gmail.com'
+    const emailLabel = 'florentin.duyck.pro@gmail.com'
 </script>
