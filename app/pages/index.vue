@@ -35,7 +35,7 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:px-6 lg:px-10">
                 <card-project :project-name="t('projects.projects.0.name')" :project-description="t('projects.projects.0.description')" :project-image="nestbudgetImage" :techs="['React', 'NextJS', 'TailwindCSS']" :project-link="nestbudgetLink"/>
                 <card-project :project-name="t('projects.projects.1.name')" :project-description="t('projects.projects.1.description')" :project-image="blogImage" :techs="['NuxtJS', 'VueJS', 'TailwindCSS']" :project-link="blogLink" />
-                <card-project :project-name="t('projects.projects.1.name')" :project-description="t('projects.projects.2.description')" :project-image="carnetMeneurImage" :techs="['VueJS', 'TailwindCSS','Pinia']" :project-link="carnetMeneurLink" />
+                <card-project :project-name="t('projects.projects.2.name')" :project-description="t('projects.projects.2.description')" :project-image="carnetMeneurImage" :techs="['VueJS', 'TailwindCSS','Pinia']" :project-link="carnetMeneurLink" />
             </div>
         </section>
     </scroll-reveal>
