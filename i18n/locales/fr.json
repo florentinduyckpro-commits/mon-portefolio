@@ -50,9 +50,9 @@
         "link": "https://blog-florentin-duyck.vercel.app"
       },
       {
-        "name": "WordPress Blog",
-        "description": "Blog personnel développé avec WordPress, offrant une interface conviviale pour la publication d'articles.",
-        "link": "https://blog.example.com"
+        "name": "Carnet de meneur",
+        "description": "Application web pour meneurs de jeu de rôle sur table. Prépare une séance en un seul endroit : résumé, points clés à ne pas oublier, playlist d'ambiance et bibliothèque de PNJ réutilisables d'une séance à l'autre. Vue 3, Vite, Vue Router — architecture pensée autour d'un modèle de données à deux entités découplées (sessions / PNJ partagés).",
+        "link": "https://carnet-de-meneur.vercel.app"
       }
     ]
   },

@@ -41,18 +41,18 @@
     "projects": [
       {
         "name": "NestBudget",
-        "description": "Budget management SaaS designed and developed from idea to production deployment.",
+        "description": "A budget management SaaS designed and developed from concept to production deployment.",
         "link": "https://nestbudget.fr"
       },
       {
         "name": "Technical blog",
-        "description": "Blog focused on web development and my hands-on experience, built with Nuxt 4 and Vue 3.",
+        "description": "A blog focused on web development and my hands-on experience, built with Nuxt 4 and Vue 3.",
         "link": "https://blog-florentin-duyck.vercel.app"
       },
       {
-        "name": "WordPress Blog",
-        "description": "Personal blog developed with WordPress, offering a user-friendly publishing interface.",
-        "link": "https://blog.example.com"
+        "name": "Tabletop GM Notebook",
+        "description": "A web app for tabletop role-playing game masters. It prepares a session in one place: summary, key points to remember, ambiance playlist, and a reusable NPC library from one session to the next. Vue 3, Vite, Vue Router — architecture designed around a two-entity data model (sessions / shared NPCs).",
+        "link": "https://carnet-de-meneur.vercel.app"
       }
     ]
   },

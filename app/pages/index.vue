@@ -35,6 +35,7 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:px-6 lg:px-10">
                 <card-project :project-name="t('projects.projects.0.name')" :project-description="t('projects.projects.0.description')" :project-image="nestbudgetImage" :techs="['React', 'NextJS', 'TailwindCSS']" :project-link="nestbudgetLink"/>
                 <card-project :project-name="t('projects.projects.1.name')" :project-description="t('projects.projects.1.description')" :project-image="blogImage" :techs="['NuxtJS', 'VueJS', 'TailwindCSS']" :project-link="blogLink" />
+                <card-project :project-name="t('projects.projects.1.name')" :project-description="t('projects.projects.2.description')" :project-image="carnetMeneurImage" :techs="['VueJS', 'TailwindCSS','Pinia']" :project-link="carnetMeneurLink" />
             </div>
         </section>
     </scroll-reveal>
@@ -75,11 +76,13 @@
 <script setup>
 import nestbudgetImage from '~/assets/images/nestbudget.png'
 import blogImage from '~/assets/images/blog.PNG'
+import carnetMeneurImage from '~/assets/images/carnetMeneur.PNG'
 import { Mail } from '@lucide/vue';
 const { t } = useI18n()
 const requestUrl = useRequestURL()
 const nestbudgetLink = 'https://nestbudget.fr'
 const blogLink = 'https://blog-florentin-duyck.vercel.app'
+const carnetMeneurLink = 'https://carnet-de-meneur.vercel.app'
 const emailAddress = 'florentin.duyck.pro@gmail.com'
 const emailLabel = 'florentin.duyck.pro@gmail.com'
 const { target, isVisible } = useScrollReveal()
