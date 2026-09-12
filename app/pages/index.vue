@@ -81,7 +81,7 @@ import { Mail } from '@lucide/vue';
 const { t } = useI18n()
 const requestUrl = useRequestURL()
 const nestbudgetLink = 'https://nestbudget.fr'
-const blogLink = 'https://blog-florentin-duyck.vercel.app'
+const blogLink = 'https://www.florentin-duyck.fr'
 const carnetMeneurLink = 'https://carnet-de-meneur.vercel.app'
 const emailAddress = 'florentin.duyck.pro@gmail.com'
 const emailLabel = 'florentin.duyck.pro@gmail.com'
